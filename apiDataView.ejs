@@ -1,0 +1,35 @@
+
+
+ 
+
+  
+    <table class="table table-dark table-striped-columns">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>Sold</th>
+            <th>Date of Sale</th>
+
+        </tr>
+
+        <% mdata.forEach(item => { %>   
+        <tr>
+            <th><%= item.id %></th>
+            <th><%= item.title %></th>
+            <th><%= item.price %></th>
+            <th><%= item.description %></th>
+            <th><%= item.category %></th>
+            <th><%= item.image %></th>
+            <th><%= item.sold %></th>
+            <th><%= item.dateOfSale %></th>
+            
+
+        </tr>
+        <%})%>  
+    </table>
+
+  
